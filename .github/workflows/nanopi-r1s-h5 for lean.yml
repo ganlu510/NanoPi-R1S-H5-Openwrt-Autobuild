@@ -1,14 +1,14 @@
 #=================================================
 # Description: NanoPi R1S-H5 OpenWrt 19.07 Autobuild
 # Lisence: MIT
-# Author: tjuy
+# Author: tjuyy
 #=================================================
 
 name: NanoPi R1S-H5 OpenWrt 19.07 Autobuild
 
 on:
-  release:
-    types: [published]
+  # release:
+  #  types: [published]
   push:
     branches:
       - master
@@ -16,8 +16,8 @@ on:
       - "R1S-H5.diffconfig"
   #  schedule:
   #    - cron: 0 8 * * 5
-  watch:
-    types: [started]
+  # watch:
+  #  types: [started]
 
 jobs:
   build:
